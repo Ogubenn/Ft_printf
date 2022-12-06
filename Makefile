@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 FLAG = -Wall -Wextra -Werror
-SRC	 = ft_printf.c \
-	   ft_printf_utils.c
+SRC  = 	ft_printf.c \
+		ft_printf_utils.c
 
 all: $(NAME)
 
@@ -15,4 +15,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re.

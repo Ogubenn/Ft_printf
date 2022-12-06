@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgoc <kgoc@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
+/*   By: ogdurkan <ogdurkan@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/22 14:03:09 by kgoc              #+#    #+#             */
-/*   Updated: 2022/12/01 12:57:52 by kgoc             ###   ########.fr       */
+/*   Created: 2022/12/06 17:30:21 by ogdurkan          #+#    #+#             */
+/*   Updated: 2022/12/06 17:30:38 by ogdurkan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	ft_printf(const char *str, ...)
 			rtrn += ft_print_data(&args, str[i + 1]);
 			i++;
 		}
-		else
+		else if (str[i] != '%')
 			rtrn += write(1, &str[i], 1);
 		i++;
 	}
